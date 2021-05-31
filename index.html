@@ -1,0 +1,74 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Harmonify: Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+				<h1 id="title">Harmonify Survey Form</h1>
+				<p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+		</div>
+		<form id="survey-form">
+
+			<label id="name-label" for="name">Name</label><br>
+			<input type="text" name="name" id="name" placeholder="Enter your name" required><br>
+
+			<label id="email-label">Email</label><br>
+			<input type="email" name="email" id="email" placeholder="Enter your Email" required><br>
+
+			<label id="number-label" for="number">Age (optional)</label><br>
+			<input type="number" name="age" id="number" placeholder="Enter your age" min="15" max="100"><br>
+
+			<label id="dropdown-label" for="dropdown">Which option best describes your current role?</label><br>
+			<select id="dropdown" name="dropdown">
+				<option value="" disabled selected>Select an option</option>
+				<option value="student">Student</option>
+				<option value="full-time-job">Full Time Job</option>
+				<option value="full-time-learner">Full Time Learner</option>
+				<option value="part-timer">Part Timer</option>
+				<option value="other">Other</option>
+			</select><br>
+
+			<fieldset>
+				<legend class="radio-label">Would you recommend this site to a friend?</legend>
+
+				<input type="radio" name="recommendation" id="yes" value="yes">
+				<label class="radio-label" for="yes">Definitely</label><br>
+
+				<input type="radio" name="recommendation" id="maybe" value="maybe">
+				<label class="radio-label" for="maybe">Maybe</label><br>
+
+				<input type="radio" name="recommendation" id="no" value="no">
+				<label class="radio-label" for="no">No</label><br>
+			</fieldset>
+
+			<fieldset>
+				<legend class="checkbox-label">What would you like to see improved?</legend>
+
+				<input type="checkbox" name="need-improve" id="add-courses" value="add-courses">
+				<label class="checkbox-label" for="add-courses">Additional Courses</label><br>
+
+				<input type="checkbox" name="need-improve" id="wiki" value="wiki">
+				<label class="checkbox-label" for="wiki">Wiki</label><br>
+				
+				<input type="checkbox" name="need-improve" id="forum" value="forum">
+				<label class="checkbox-label" for="forum">Forum</label><br>
+
+				<input type="checkbox" name="need-improve" id="checkbox-other" value="checkbox-other">
+				<label class="checkbox-label" for="checkbox-other">Others </label>
+				<input type="text" name="need-improve" id="checkbox-other" placeholder="Please specify..."><br>
+			</fieldset>
+
+			<label id="comment-label" for="comment">Any comments or suggestions?</label><br>
+			<textarea id="comment" name="comment" rows="3" placeholder="Enter your comment here..."></textarea><br>
+
+			<button type="submit" id="submit" value="submit">Submit</button>
+
+		</form>
+	</div>
+</body>
+</html>
