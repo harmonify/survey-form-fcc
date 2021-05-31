@@ -1,45 +1,63 @@
-body{
+body {
 	background-image: url("https://www.teahub.io/photos/full/277-2771936_music-studio-wallpaper-4k.jpg");
 	background-size: cover;
 	margin: auto;
 	position: relative;
 }
+
 #wrapper {
-    content: "";
-    position: fixed;
-    overflow: auto;
-    background: rgba(102,178,178,0.5);
-    width: 100%;
-    height: 100%;
-    /*max-height: 200%;*/
-    margin: 0;
+	content: "";
+	position: fixed;
+	overflow: auto;
+	background: rgba(55, 1, 150, 0.5);
+	width: 100%;
+	height: 100%;
+	/*max-height: 200%;*/
+	margin: 0;
 }
-#header{
+
+#header {
 	color: #fff;
 	margin-top: 2%;
 	text-align: center;
 }
-#title{
+
+#title {
 	font-weight: 400;
 }
-#description{
+
+#description {
 	font-size: 1.2em;
 }
-#survey-form{
+
+#survey-form {
 	width: 30em;
 	border-radius: 15px;
-	background-color: rgba(0,128,128,0.8);
+	background-color: rgba(116, 1, 169, 0.914);
 	margin: 1em auto;
 	padding: 2em 3em;
 }
-#name-label, #email-label, #number-label, #dropdown-label, .radio-label, .checkbox-label, #comment-label  {
+
+#name-label,
+#email-label,
+#number-label,
+#dropdown-label,
+.radio-label,
+.checkbox-label,
+#comment-label {
 	color: #fff;
 	width: 86%;
 	font-size: 1.2em;
 	line-height: 1.75em;
 	margin: 1em auto;
 }
-#name, #email, #number, #dropdown, #comment, #submit {
+
+#name,
+#email,
+#number,
+#dropdown,
+#comment,
+#submit {
 	color: #555;
 	width: 100%;
 	height: auto;
@@ -47,43 +65,39 @@ body{
 	margin-bottom: 1em;
 	padding: 0.6em 1em;
 }
-#checkbox-other {
+
+#checkbox-other-specify {
 	color: #555;
 	border-radius: 5px;
+	margin-left: 0.5em;
 	margin-bottom: 1em;
-	padding: 0.6em 1em;
-	transition-timing-function: ease-in;
-	transition: 1s;
+	padding: 0.5em 1em;
+	width: 15em;
+	transition: 0.8s;
+	transition-timing-function: ease;
 }
-#checkbox-other:focus{
-	animation-name: widen;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-	transition-timing-function: linear;
+
+#checkbox-other-specify:focus {
+	width: 23em;
 }
-@keyframes widen {
-	25%{
-	width: 25%;
-	}
-	50%{
-	width: 40%;
-	}
-	75%{
-	width: 55%;
-	}
-	100%{
-	width: 70%;
-	}
-}
-fieldset{
+
+fieldset {
 	border-color: #fff;
 	margin: 1em auto;
 }
+
 #comment {
 	resize: none;
 }
+
 #submit {
 	align-items: center;
-	background-color: rgb(0,180,0);
+	background-color: rgb(150, 58, 255);
 	color: #fff;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
+
+#submit:hover {
+	background-color: rgb(113, 34, 204);
 }
